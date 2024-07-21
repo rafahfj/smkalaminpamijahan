@@ -3,7 +3,6 @@ import MediaQuery from "react-responsive";
 import { Outlet, Link } from "react-router-dom";
 
 export default class Layout extends Component {
-
   render() {
     const menuToggle = () => {
       document.querySelector(".side-nav ul").classList.add("slide");
@@ -66,25 +65,25 @@ export default class Layout extends Component {
               x
             </p>
             <h3>SMK AL AMIN</h3>
-            <li>
+            <li onClick={tClose}>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={tClose}>
               <Link to="/sejarah">Sejarah</Link>
             </li>
-            <li>
+            <li onClick={tClose}>
               <Link to="/jurusan">Jurusan</Link>
             </li>
-            <li>
+            <li onClick={tClose}>
               <Link to="/ekskul">Ekskul</Link>
             </li>
-            <li>
+            <li onClick={tClose}>
               <Link to="/pengajar">Pengajar</Link>
             </li>
-            <li>
+            <li onClick={tClose}>
               <Link to="/galeri">Galeri</Link>
             </li>
-            <li>
+            <li onClick={tClose}>
               <Link to="/contact">Kontak</Link>
             </li>
           </ul>
@@ -186,7 +185,7 @@ export default class Layout extends Component {
         <div className="cr">
           <p>
             Copyright © 2024 |
-            <a href="https://rafahfj.github.io/rafahfajrijuwaeni/">
+            <a href="https://rafahfajrijuwaeni.vercel.app/">
               Rafah Fajri Juwaeni
             </a>
           </p>
