@@ -469,6 +469,7 @@ footer {
   justify-items: center;
   gap: 15px 32px;
   padding: 40px;
+  font-family: "Inter", sans-serif;
 }
 
 .ekskul .cont-card .card {
@@ -506,6 +507,7 @@ footer {
 }
 
 .ekskul .card .title {
+  font-size: 1.4em;
 }
 
 /* No Page */
