@@ -1,46 +1,22 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import Header from "./components/Header";
+import { sNavClose } from "../functions/menuButton";
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      foo: "bar",
-      allData: {},
-      isClick: -1,
-    };
-    // this.getDB = this.getDB.bind(this);
-  }
+export default function Home(props) {
+  const [isClick, setIsClick] = useState(-1);
 
-  getDB = () => {
-    fetch("./db/allDB.json")
-      .then((response) => {
-        return response.json();
-      })
-      .then((res) => {
-        this.setState({
-          allData: res.home,
-        });
-      });
+  const handleClickFaq = (i) => () => {
+    setIsClick(i === isClick ? -1 : i);
   };
 
-  componentDidMount() {
-    this.getDB();
-  }
-  handleClick = (i) => () => {
-    this.setState({
-      isClick: i === this.state.isClick ? -1 : i,
-    });
-  };
-  render() {
-    function sNavClose() {
-      if (document.querySelector(".side-nav ul").classList.contains("slide")) {
-        document.querySelector(".side-nav ul").classList.remove("slide");
-        document.querySelector(".t-close").classList.remove("slide");
-      }
-    }
-    return (
+  const header = props.home.header;
+  const home = props.home;
+
+  return (
+    <Fragment>
+      <Header data={header} />
       <main onClick={sNavClose}>
-        {this.state.allData.sect?.map((sect) => {
+        {home.sect?.map((sect) => {
           return (
             <Fragment key={sect.href}>
               <section key={sect.href} className={sect.id} id="sect-2">
@@ -60,7 +36,7 @@ class Home extends Component {
         <section className="sect gallery">
           <h2>GALERI</h2>
           <div className="cont-gallery">
-            {this.state.allData.galeri?.map((foto) => {
+            {home.galeri?.map((foto) => {
               return (
                 <div key={foto.id} className="card">
                   <img src={foto.src} alt={foto.alt} title={foto.alt} />
@@ -74,15 +50,13 @@ class Home extends Component {
         <section className="sect faqs">
           <h2>FAQ</h2>
           <div className="cont-faqs">
-            {this.state.allData.faqs?.map((faq, i) => {
+            {home.faqs?.map((faq, i) => {
               return (
                 <div
                   key={i}
-                  onClick={this.handleClick(i)}
+                  onClick={handleClickFaq(i)}
                   className={
-                    i === this.state.isClick
-                      ? "faq faq--expanded"
-                      : "faq faq--unexpanded"
+                    i === isClick ? "faq faq--expanded" : "faq faq--unexpanded"
                   }
                 >
                   <div>
@@ -103,8 +77,6 @@ class Home extends Component {
         </section>
         <div className="gradient-bottom"></div>
       </main>
-    );
-  }
+    </Fragment>
+  );
 }
-
-export default Home;

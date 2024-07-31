@@ -10,7 +10,6 @@ header {
 .hero {
   width: 100%;
   height: 800px;
-  background-image: url(../images/icon/img-1.webp);
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,7 +106,12 @@ header {
   font-family: "Rubik", sans-serif;
   padding: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  transition: all linear 0.5s;
+  transition: all linear 0.3s;
+}
+
+ul.nav-bar--hidden {
+  transform: translateY(-100%);
+  transition: all linear 0.3s;
 }
 
 .nav-fixed ul .nav-right {
@@ -121,12 +125,18 @@ header {
   color: black;
   margin: 0;
   display: block;
-  width: 60px;
-  padding: 7px;
+  width: 80px;
   border-radius: 7px;
   transition: 0.3s;
   font-size: 0.85em;
   text-align: center;
+}
+
+.nav-fixed ul .nav-right li a {
+  display: block;
+  width: 60px;
+  padding: 7px;
+  margin: auto;
 }
 
 .nav-fixed ul .nav-right li:hover {
@@ -169,11 +179,15 @@ header {
 .side-nav ul li {
   color: black;
   margin: 10px 25px;
+  border-radius: 7px;
+  transition: 0.3s;
+  width: 90px;
+}
+
+.side-nav ul li a {
   display: block;
   width: 70px;
   padding: 7px;
-  border-radius: 7px;
-  transition: 0.3s;
 }
 
 .side-nav ul li:hover {
@@ -447,4 +461,64 @@ footer {
   text-decoration: underline;
 }
 
-/* Nav Atas Wide Screen */
+/* Page Ekskul */
+
+.ekskul .cont-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  justify-items: center;
+  gap: 15px 32px;
+  padding: 40px;
+}
+
+.ekskul .cont-card .card {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 15px; /* 5px rounded corners */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.ekskul .cont-card .card .thumb {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.ekskul .cont-card .card .thumb img {
+  width: 100%;
+  height: 100%;
+}
+
+.ekskul .cont-card .card-top {
+  margin-bottom: 30px;
+}
+
+.ekskul .cont-card .card-btm {
+  height: 100px;
+}
+
+.ekskul .card .title {
+}
+
+/* No Page */
+
+.no-page {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  height: 100px;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 200px 0;
+  text-transform: uppercase;
+}
+.no-page h1 {
+  margin: 30px 0;
+}

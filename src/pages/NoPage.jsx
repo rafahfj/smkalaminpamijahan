@@ -1,8 +1,10 @@
-export default function NoPage() {
+export default function NoPage(props) {
   return (
     <>
-      <h1>ERROR NOT FOUND</h1>
-      <h1>404</h1>
+      <div className="no-page">
+        <h1>{props.nopage.text}</h1>
+        <h2>{props.nopage.text2}</h2>
+      </div>
     </>
   );
 }

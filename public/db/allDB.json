@@ -1,5 +1,15 @@
 {
   "home": {
+    "header": {
+      "name": "SMK AL AMIN",
+      "from": "PAMIJAHAN BOGOR",
+      "motto": "Luruskan niat bersihkan hati satukan langkah maju sukses menuju masyarakat madani bersama Al Amin",
+      "logo": "./images/icon/logo-yhma.png",
+      "alt": "Logo Yayasan Haji Muhamad Amin",
+      "style": {
+        "backgroundImage": "url(../images/photos/upacara2.1.jpg)"
+      }
+    },
     "sect": [
       {
         "id": "sect sect-1",
@@ -90,7 +100,165 @@
     ]
   },
   "sejarah": {
-    "1": "SMK Al Amin berdiri sejak 1998",
-    "2": "Dengan ini"
+    "header": {
+      "name": "SEJARAH",
+      "from": "SMK AL AMIN",
+      "motto": "",
+      "logo": "./images/icon/logo-yhma.png",
+      "alt": "Logo Yayasan Haji Muhamad Amin",
+      "style": {
+        "backgroundImage": "url(../images/photos/upacara1.1.jpg)"
+      }
+    },
+    "text": [
+      { "p": "Lorem" },
+      { "p": "Lorem" },
+      { "p": "lorem" },
+      { "p": "lOreM" }
+    ]
+  },
+  "jurusan": {
+    "header": {
+      "name": "JURUSAN",
+      "from": "SMK AL AMIN",
+      "motto": "",
+      "logo": "./images/icon/logo-yhma.png",
+      "alt": "Logo Yayasan Haji Muhamad Amin",
+      "style": {
+        "backgroundImage": "url(../images/photos/siswa-otkp.1.jpg)"
+      }
+    },
+    "all": [
+      { "title": "Bisnis Daring dan Pemasaran", "src": "", "desc": "" },
+      {
+        "title": "Manajemen Perkantoran dan Layanan Bisnis",
+        "src": "",
+        "desc": ""
+      },
+      { "title": "Teknik Komputer dan Jaringan", "src": "", "desc": "" },
+      { "title": "Multimedia", "src": "", "desc": "" }
+    ]
+  },
+  "ekskul": {
+    "header": {
+      "name": "EKSTRAKULIKULER",
+      "from": "SMK AL AMIN",
+      "motto": "",
+      "logo": "./images/icon/logo-yhma.png",
+      "alt": "Logo Yayasan Haji Muhamad Amin",
+      "style": {
+        "backgroundImage": "url(../images/photos/paskibra6.1.jpg)"
+      }
+    },
+    "all": [
+      {
+        "title": "Paskibra",
+        "src": "./images/photos/paskibra2.webp",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      },
+      {
+        "title": "Pramuka",
+        "src": "./images/photos/pelantikan1.jpg",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      },
+      {
+        "title": "Futsal",
+        "src": "./images/photos/futsal2.2.jpg",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      },
+      {
+        "title": "Badminton",
+        "src": "./images/photos/",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      },
+      {
+        "title": "Basket",
+        "src": "./images/photos/",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      },
+      {
+        "title": "Voly",
+        "src": "./images/photos/",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      },
+      {
+        "title": "Seni Tari",
+        "src": "./images/photos/kesenian1.2.jpg",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      },
+      {
+        "title": "Gamelan",
+        "src": "./images/photos/",
+        "desc": "Lorem lorem lOreM loReM LorEm lOrEm"
+      }
+    ]
+  },
+  "pengajar": {
+    "header": {
+      "name": "TENAGA PENDIDIK",
+      "from": "SMK AL AMIN",
+      "motto": "",
+      "logo": "./images/icon/logo-yhma.png",
+      "alt": "Logo Yayasan Haji Muhamad Amin",
+      "style": {
+        "backgroundImage": "url(../images/photos/pramuka8.1.jpg)"
+      }
+    }
+  },
+  "galeri": {
+    "header": {
+      "name": "GALERI",
+      "from": "SMK AL AMIN",
+      "motto": "",
+      "logo": "./images/icon/logo-yhma.png",
+      "alt": "Logo Yayasan Haji Muhamad Amin"
+    }
+  },
+  "kontak": {
+    "header": {
+      "name": "KONTAK",
+      "from": "SMK AL AMIN",
+      "motto": "",
+      "logo": "./images/icon/logo-yhma.png",
+      "alt": "Logo Yayasan Haji Muhamad Amin"
+    }
+  },
+  "layout": {
+    "navigasi": [
+      { "path": "home" },
+      { "path": "sejarah" },
+      { "path": "jurusan" },
+      { "path": "ekskul" },
+      { "path": "pengajar" },
+      { "path": "galeri" },
+      { "path": "kontak" }
+    ],
+    "sosmed": [
+      {
+        "alt": "instagram",
+        "href": "https://www.instagram.com/smkalamincibening98?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+        "logo": "./images/icon/logo/instagram.png"
+      },
+      {
+        "alt": "facebook",
+        "href": "https://www.facebook.com/profile.php?id=100090175191401&mibextid=ZbWKwL",
+        "logo": "./images/icon/logo/facebook.png"
+      },
+      {
+        "alt": "YouTube",
+        "href": "https://youtube.com/@smkalamincibeningchannel1032?si=otlpqFhhwGddGfCR",
+        "logo": "./images/icon/logo/youtube.png"
+      },
+      {
+        "alt": "Location",
+        "href": "https://maps.app.goo.gl/nG1vXzZxeZZ5r2jQ9",
+        "logo": "./images/icon/logo/pin.png"
+      }
+    ],
+    "address": "Jalan Thamrin no. 1 <br /> Desa Cibening Kecamatan Pamijahan <br /> Kabupaten Bogor <br /> 16810"
+  },
+  "nopage": {
+    "text": "error 404",
+    "text2": "page not found"
   }
 }
